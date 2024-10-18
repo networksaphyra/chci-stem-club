@@ -1,9 +1,63 @@
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
-  background-color: #000000;
+  font-family: "Manrope", "Courier New", Courier, monospace;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  padding: 1em 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-link a:hover {
+  color: #0066cc;
+}
+
+.nav-link img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
 }

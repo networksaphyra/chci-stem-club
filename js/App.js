@@ -1,13 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Navbar from "./Navbar.js";
 import "../css/index.css";
 
 const App = () => {
-  return (
-    <div>
-      <h1 style={{ color: "white" }}>Hello Update!</h1>
-    </div>
-  );
+  return <Navbar />;
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
