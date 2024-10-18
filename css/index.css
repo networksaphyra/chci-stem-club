@@ -4,11 +4,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  --background-color: #1b2021;
+  --text-color: #fcf7f8;
+  --accent-color: #51a3a3;
 }
 
 body {
   font-family: "Manrope", "Courier New", Courier, monospace;
-  background: rgba(51, 51, 51, 0.5);
+  background: var(--background-color);
 }
 
 #header {
@@ -24,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-left: 3em;
+  margin-left: 2em;
   align-items: center;
 }
 
@@ -36,17 +39,19 @@ body {
 }
 
 .nav-link a {
-  color: #333;
+  color: var(--text-color);
   text-decoration: none;
   transition:
-    color 0.2s ease,
+    color 0.2s ease-in-out,
     transform 0.2s ease-in-out;
   cursor: pointer;
   display: inline-block;
+  font-size: 1.1em;
+  font-weight: 300;
 }
 
 .nav-link a:hover {
-  color: #0066cc;
+  color: var(--accent-color);
   transform: scale(1.2);
 }
 
@@ -63,5 +68,5 @@ body {
 
 .social-links {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
