@@ -1,33 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --background-color: #1b2021;
-  --text-color: #fcf7f8;
+  --background-color: #fff;
+  --text-color: #000;
   --accent-color: #51a3a3;
 }
 
 body {
-  font-family: "Manrope", "Courier New", Courier, monospace;
+  font-family: "Raleway", "Courier New", Courier, monospace;
   background: var(--background-color);
+  width: 100vw;
+  height: 100vh;
 }
 
 #header {
   display: flex;
-  justify-content: flex-start;
-  padding: 2em 3em;
-  max-width: 1400px;
+  /* padding: 1.5em 2em; */
+  max-width: 1000px;
+  min-height: 4em;
   align-items: center;
   margin: 0 auto;
+  margin-top: -1em;
+  /* margin-top: 1em; */
+  border: 2px solid white;
+  border-radius: 10em;
+}
+
+#header .logo {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-left: 2em;
+  margin-left: 1em;
   align-items: center;
 }
 

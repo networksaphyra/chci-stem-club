@@ -1,9 +1,10 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
-const Navbar = () => {
+const Header = () => {
   return (
     <section id="header">
-      <img src="../assets/logo.png" alt="Logo" className="logo" />
+      <img src={logo} alt="CHCI Stem Club" className="logo" />
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-link">
@@ -39,4 +40,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
