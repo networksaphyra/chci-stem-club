@@ -18,19 +18,17 @@ body {
 
 #header {
   display: flex;
-  /* padding: 1.5em 2em; */
   max-width: 1000px;
   min-height: 4em;
   align-items: center;
   margin: 0 auto;
-  margin-top: -1em;
-  /* margin-top: 1em; */
   border: 2px solid white;
   border-radius: 10em;
 }
 
-#header .logo {
-  width: 200px;
+#header .header-logo {
+  max-width: 200px;
+  width: 175px;
   height: auto;
   cursor: pointer;
 }
@@ -39,7 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-left: 1em;
+  margin-left: 3em;
   align-items: center;
 }
 
@@ -81,4 +79,19 @@ body {
 .social-links {
   display: flex;
   gap: 2rem;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .logo {
+  width: 450px;
+  height: 450px;
+  max-width: 550px;
+  max-height: 550px;
 }
