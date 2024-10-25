@@ -24,11 +24,12 @@ body {
   margin: 0 auto;
   border: 2px solid white;
   border-radius: 10em;
+  padding: 1.5em 0em;
 }
 
 #header .header-logo {
   max-width: 200px;
-  width: 175px;
+  width: 100px;
   height: auto;
   cursor: pointer;
 }
@@ -71,13 +72,7 @@ body {
   object-fit: contain;
 }
 
-.logo {
-  width: 120px;
-  height: auto;
-}
-
 .social-links {
-  display: flex;
   gap: 2rem;
 }
 
@@ -87,11 +82,17 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5em;
 }
 
 main .logo {
-  width: 450px;
-  height: 450px;
-  max-width: 550px;
-  max-height: 550px;
+  max-width: 450px;
+  max-height: 450px;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+main .heading {
+  padding: 4em;
+  font-size: 1.2em;
 }
