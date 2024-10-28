@@ -5,7 +5,7 @@
   "homepage": "https://networksaphyra.github.io/chci-stem-club",
   "scripts": {
       "start": "parcel index.html",
-      "build": "parcel build index.html --dist-dir build --public-url /chci-stem-club/",
+      "build": "parcel build index.html --dist-dir build --public-url /chci-stem-club/ --no-optimize",
       "predeploy": "npm run build",
       "deploy": "gh-pages -d build"
     },
