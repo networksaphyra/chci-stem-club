@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo4.png";
+import "animate.css";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <img
         src={logo}
         alt="CHCI Stem Club"
-        className="header-logo animate__animated animate__fadeInDown"
+        className="header-logo animate__animated animate__fadeInDown animate__delay-1s"
       />
       <nav className="navbar">
         <ul className="nav-list animate__animated animate__fadeInLeft animate__delay-0.5s">
@@ -27,7 +28,7 @@ const Header = () => {
             <a href="#">Team</a>
           </li>
         </ul>
-        <ul className="nav-list social-links animate__animated animate__fadeInRight animate__delay-0.65s">
+        <ul className="nav-list social-links animate__animated animate__fadeInRight animate__delay-0.75s">
           <li className="nav-link">
             <a href="#" aria-label="Instagram">
               <img src="../assets/instagram.png" alt="Instagram" />
