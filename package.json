@@ -4,11 +4,11 @@
   "source": "index.html",
   "homepage": "https://networksaphyra.github.io/chci-stem-club",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
+      "start": "parcel index.html",
+      "build": "parcel build index.html --dist-dir build --public-url /chci-stem-club/",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    },
   "dependencies": {
     "animate.css": "^4.1.1",
     "react": "18.2.0",
