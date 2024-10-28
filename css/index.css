@@ -18,13 +18,16 @@ body {
 
 #header {
   display: flex;
-  max-width: 1000px;
+  max-width: 1100px;
   min-height: 4em;
   align-items: center;
   margin: 0 auto;
-  border: 2px solid white;
+  margin-top: 1em;
+  /* border: 1px solid black; */
   border-radius: 10em;
-  padding: 1.5em 0em;
+  padding: 0.5em 2em;
+  box-shadow: 0px 0px 2px black;
+  overflow: hidden;
 }
 
 #header .header-logo {
