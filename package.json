@@ -2,9 +2,12 @@
   "name": "chci-stem-club",
   "version": "1.0.0",
   "source": "index.html",
+  "homepage": "https://networksaphyra.github.io/chci-stem-club",
   "scripts": {
-    "start": "parcel serve index.html --no-cache",
-    "build": "parcel build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -12,6 +15,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "parcel": "2.12.0",
     "parcel-reporter-static-files-copy": "^1.5.3",
     "process": "0.11.10"
